@@ -1,6 +1,7 @@
 password=12345678
+name=mycluster
 
-mysqlsh root:${password}@localhost:3310 -- dba create-cluster mycluster
+mysqlsh root:${password}@localhost:3310 -- dba create-cluster ${name}
 
 mysqlsh root:${password}@localhost:3310 -- cluster addInstance root:${password}@localhost:3320
 
